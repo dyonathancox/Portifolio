@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-header: #211F21;
+    --txt-lynx: #dcdde1;
+    --bg-main: #353b48;
+    --txt-blue: #a7cbec;
+    --txt-one: #a5a1a5;
+    --bg-about: #dfe3e8;
+    font-size: 62.5%;
+}
+body, button{
+    font-family: "Noto Sans", sans-serif;
+}
+
+/*MENU*/
+header {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-header);
+}
+  
+.menu-wrapper {
+    text-align: right;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+  
+.menu-wrapper ul {
+    display: flex;
+    gap: 1rem;
+    font-weight: bold;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-wrapper ul li a{
+    font-size: 2rem;
+    color: var(--txt-lynx);
+    text-decoration: none;
+    font-weight: 300;
+}
+  
+.menu-wrapper ul li a:hover {
+    color: var(--txt-blue);
+    font-weight: 400;
+    border-bottom: 0.1rem solid var(--txt-blue);
+}
+
+/*MAIN*/
+main {
+    width: 100%;
+    background: var(--bg-main);
+}
+.one-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.one {
+    width: 122rem;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.one h1 {
+    font-size: 4.2rem;
+    color: var(--txt-blue);
+    font-weight: 800;
+}
+.one img {
+    width: 50%;
+    object-fit: cover;
+    align-items: center;
+
+}
+
+.text {
+    display: inline;
+    margin-top: 15rem;
+}
+
+.text h2 {
+    color: var(--txt-one);
+    font-weight: 650;
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3.5s steps(40, end), blink 0.75s infinite;
+}
+.text button{
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background: var(--txt-blue);
+    cursor: pointer;
+}
+.text button:hover{
+    background: #8ebeeb;
+    font-weight: bold;
+}
+
+
+/*ABOUT*/
+.about-container{
+    background: var(--bg-about);
+    width: 100%;
+    height: 100vh;
+}
+
+/* Animação de escrever o texto */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 62%; /*tamanho do texto*/
+    }
+}
