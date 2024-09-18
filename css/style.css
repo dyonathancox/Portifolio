@@ -67,7 +67,7 @@ main {
     justify-content: center;
 }
 
-.one {
+.geral {
     width: 122rem;
     height: 100vh;
     display: flex;
@@ -106,10 +106,11 @@ main {
     font-size: 1.4rem;
     font-weight: 600;
     background: var(--txt-blue);
+    color: var(--bg-main);
     cursor: pointer;
 }
 .text button:hover{
-    background: #8ebeeb;
+    background: var(--txt-lynx);
     font-weight: bold;
 }
 
@@ -136,7 +137,7 @@ main {
     padding: 0 5rem;
 }
 .text-about h2 {
-    font-size: 4.2rem;
+    font-size: 3.6rem;
     color: var(--bg-header);
     font-weight: 800;
     margin-top: 8rem;
@@ -153,11 +154,69 @@ main {
     display: flex;
 }
 /*TECNOLOGIAS*/
+.tec-container{
+    width: 100%;
+    
+    background: var(--bg-about);
+    display: flex;
+    place-content: center;
+}
+.tecnologia{
+    width: 122rem;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 2rem 0;
+    text-align: center;
+}
+.text-tecno h2{
+    font-size: 2.8rem;
+    color: var(--txt-blue);
+    text-align: center;
+    font-weight: 600;
+}
+.text-tecno h3{
+    font-size: 3.2rem;
+    color: var(--txt-lynx);
+    font-weight: 700;
+    line-height: 5.5rem;
+}
+hr{
+    border: .2rem solid var(--txt-blue);
+    width: 55%;  
+    margin: 0 auto;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 25rem 25rem 25rem 25rem; /* definindo o mesmo tamanho do card*/
+    gap: 3rem;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+}
 
+.card {
+    background: var(--bg-about);
+    border-radius: 2rem;
+    border: 1px solid var(--txt-one);
+    height: 25rem;   
+    padding: 2rem;
+    box-sizing: border-box;
+}
 
-
-
-
+.card p{
+    color: var(--bg-main);
+    font-size: 1.3rem;  
+    margin-top: 1rem;
+    text-align: center;
+}
+.card h2{
+    color: var(--bg-main);
+    font-size: 1.3rem;  
+    margin-top: 1rem;
+}
+.fa-brands{
+    color: var(--bg-main);
+    font-size: 6rem;
+}
 
 
 
