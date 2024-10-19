@@ -9,22 +9,31 @@
     --bg-main: #353b48;
     --txt-blue: #a7cbec;
     --txt-one: #a5a1a5;
+    --space-small: 2rem;
+    --space-medium: 4rem;
+    --space-large: 8rem;
     font-size: 62.5%;
 }
 body, button{
     font-family: "Noto Sans", sans-serif;
 }
 
-/*MENU*/
+
+
+/* MENU FIXO */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 8rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--bg-header);
+    z-index: 1000;
 }
-  
+
 .menu-wrapper {
     text-align: right;
     justify-content: space-between;
@@ -32,7 +41,7 @@ header {
     align-items: center;
     gap: 2.5rem;
 }
-  
+
 .menu-wrapper ul {
     display: flex;
     gap: 1rem;
@@ -48,7 +57,7 @@ header {
     text-decoration: none;
     font-weight: 300;
 }
-  
+
 .menu-wrapper ul li a:hover {
     color: var(--txt-blue);
     font-weight: 400;
@@ -59,18 +68,19 @@ header {
 main {
     width: 100%;
     background: var(--bg-main);
+    
 }
+.geral {
+    width: 122rem;
+    height: 100vh;
+    
+}
+
 .one-container{
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-.geral {
-    width: 122rem;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
 }
 
 .one h1 {
@@ -79,14 +89,18 @@ main {
     font-weight: 800;
 }
 .one img {
-    width: 50%;
-    object-fit: cover;
+    width: 70rem;
+    align-items: center;
+}
+
+.one, .about{
+    display: flex;
     align-items: center;
 }
 
 .text {
-    display: inline;
-    margin-top: 15rem;
+    width: 60rem;
+    display: grid;
 }
 
 .text h2 {
@@ -98,11 +112,12 @@ main {
     animation: typing 3.5s steps(40, end), blink 0.75s infinite;
 }
 .text button{
+    width: 20rem;
     border-radius: 1rem;
-    padding: 1rem 2rem;
+    padding: 1.7rem 2.5rem;
     margin-top: 2rem;
     border: none;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
     background: var(--txt-blue);
     color: var(--bg-main);
@@ -126,31 +141,30 @@ main {
 .about{
     width: 122rem;
     height: 100vh;
-    display: flex;
-    justify-content: space-evenly;
 }
 .text-about{
     display: inline;
     text-align: center;
     margin: 0 auto;
-    padding: 0 5rem;
+    padding-left: 8rem;
 }
 .text-about h2 {
-    font-size: 3.6rem;
+    font-size: 3.8rem;
     color: var(--bg-header);
     font-weight: 800;
-    margin: 8rem 0;
+    margin-bottom: 4rem;
 }
 .text-about p{
     margin-bottom: 3rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-align: justify;
-    font-weight: 580;
+    font-weight: 550;
 }
 .about-content img {
     width: 50%;
-    object-fit: cover;
     display: flex;
+    align-items: center;
+    
 }
 /*TECNOLOGIAS*/
 .tec-container{
@@ -161,8 +175,9 @@ main {
 }
 .tecnologia{
     width: 122rem;
+    min-height: 100vh;
     margin: 0 auto;
-    padding: 2rem 0 4rem;
+    padding: 10rem 0;
     text-align: center;
 }
 .text-line h2{
@@ -186,8 +201,8 @@ main {
 .cards {
     display: grid;
     grid-template-columns: 25rem 25rem 25rem; /* definindo o mesmo tamanho do card*/
-    gap: 3rem;
-    margin-top: 4rem;
+    gap: 4rem;
+    margin-top: 8rem;
     justify-content: space-evenly;
 }
 
@@ -217,7 +232,6 @@ main {
 }
 .fa-brands{
     font-size: 6rem;
-    margin-top: 2rem;
 }
 
 /*PROJETOS*/
@@ -233,7 +247,7 @@ main {
     width: 122rem;
     height: 100vh;
     display: flex;
-    padding: 4rem 0 4rem;
+    padding: 12rem 0 4rem;
     justify-content: space-evenly;
 }
 .projects .text-line h2{
@@ -251,16 +265,18 @@ main {
 /* CONTATO */
 .contact-container {
     width: 100%;
-    position: relative; /* Permite que o footer se sobreponha */
-    z-index: 0; /* Garante que o conteúdo esteja atrás do footer */
+    position: relative;
+    z-index: 0;
 }
 .contact-content {
     display: flex;
     place-content: center;
+
 }
 .contact {
     width: 122rem;
-    padding: 4rem 0 4rem;
+    height: 100vh;
+    padding-top: 15rem;
     display: inline;
     justify-content: center;
 }
