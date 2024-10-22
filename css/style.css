@@ -75,14 +75,13 @@ main {
 .geral {
     width: 122rem;
     height: 100vh;
-    
 }
 
 .one-container{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding: 5rem 0;
 }
 
 .one h1 {
@@ -146,10 +145,12 @@ main {
 .about-content{
     display: flex;
     place-content: center;
+    padding: 5rem 0;
 }
 .about{
     width: 122rem;
     height: 100vh;
+    
 }
 .text-about{
     display: inline;
