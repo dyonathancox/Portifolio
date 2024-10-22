@@ -26,13 +26,12 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 8rem;
+    height: 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--bg-header);
     z-index: 1000;
-
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
@@ -181,13 +180,12 @@ main {
     width: 100%;
     background: var(--bg-about);
     display: flex;
-    place-content: center;
 }
 .tecnologia{
     width: 122rem;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 10rem 0;
+    padding: 8rem 0;
     text-align: center;
 }
 .text-line h2{
@@ -205,25 +203,30 @@ main {
 }
 .tecnologia hr{
     border: .2rem solid var(--txt-blue);
-    width: 45%;  
-    margin: 0 auto;
+    width: 44%;  
+    margin: 0 auto 2rem;
 }
 .cards {
-    display: grid;
-    grid-template-columns: 25rem 25rem 25rem; /* definindo o mesmo tamanho do card*/
+    display: flex;
+    grid-template-columns: repeat(4, 25rem);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 4rem;
-    margin-top: 8rem;
-    justify-content: space-between;
 }
 
 .card {
     background: var(--txt-lynx);
     border-radius: 2rem;
-    border: 1px solid var(--txt-one);
-    height: 25rem;   
+    width: 23rem;
+    height: 23rem;
     padding: 2rem;
-    box-sizing: border-box;
     transition: all 300ms ease-in-out;
+}
+.card:nth-last-child(2),
+.card:last-child {
+    
+    justify-self: center;
 }
 .card:hover{
     transform: scale(1.1);
@@ -255,7 +258,7 @@ main {
     width: 122rem;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 10rem 0;
+    padding: 7rem 0;
     text-align: center;
 }
 
@@ -265,9 +268,9 @@ main {
 .projects-content .text-line h3{
     color: var(--bg-main);
 }
-.projects .text-line hr{
+.projects-content .text-line hr{
     border: .2rem solid var(--txt-blue);
-    width: 100%;  
+    width: 33%;  
     margin: 0 auto; 
 }
 .projects-container a{
@@ -310,7 +313,7 @@ main {
 .contact {
     width: 122rem;
     height: 100vh;
-    padding: 10rem 0;
+    padding: 7rem 0;
     display: inline;
     justify-content: center;
 }
