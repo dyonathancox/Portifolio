@@ -32,6 +32,8 @@ header {
     justify-content: center;
     background: var(--bg-header);
     z-index: 1000;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .menu-wrapper {
@@ -114,18 +116,25 @@ main {
 .text button{
     width: 20rem;
     border-radius: 1rem;
-    padding: 1.7rem 2.5rem;
+    padding: 1.5rem;
     margin-top: 2rem;
     border: none;
-    font-size: 1.6rem;
-    font-weight: 600;
     background: var(--txt-blue);
-    color: var(--bg-main);
     cursor: pointer;
+}
+.text .btn {
+    display: flex;
+    gap: 2rem;
 }
 .text button:hover{
     background: var(--txt-lynx);
     font-weight: bold;
+}
+.btn a {
+    text-decoration: none;
+    color: var(--bg-main);
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 
@@ -158,7 +167,7 @@ main {
     margin-bottom: 3rem;
     font-size: 1.6rem;
     text-align: justify;
-    font-weight: 550;
+    font-weight: 450;
 }
 .about-content img {
     width: 50%;
@@ -203,7 +212,7 @@ main {
     grid-template-columns: 25rem 25rem 25rem; /* definindo o mesmo tamanho do card*/
     gap: 4rem;
     margin-top: 8rem;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .card {
@@ -238,28 +247,52 @@ main {
 .projects-container{
     width: 100%;
     background: var(--txt-lynx);
-}
-.projects-content{
     display: flex;
     place-content: center;
 }
-.projects{
+.projects-content{
     width: 122rem;
-    height: 100vh;
-    display: flex;
-    padding: 12rem 0 4rem;
-    justify-content: space-evenly;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 10rem 0;
+    text-align: center;
 }
-.projects .text-line h2{
+
+.projects-content .text-line h2{
     font-weight: 500;
 }
-.projects .text-line h3{
+.projects-content .text-line h3{
     color: var(--bg-main);
 }
 .projects .text-line hr{
     border: .2rem solid var(--txt-blue);
     width: 100%;  
     margin: 0 auto; 
+}
+.projects-container a{
+    font-size: 2.4rem;
+}
+
+.projects{
+    display: flex;
+    gap: 4rem;
+    padding-top: 5rem;
+}
+
+.projects .card{
+    border-radius: 2rem;
+    border: 1px solid var(--txt-one);
+    width: 30rem;
+    height: 30rem;   
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+}
+
+.projects .card img{
+    width: 100%;
+    
+    border-radius: 2rem;
 }
 
 /* CONTATO */
@@ -276,7 +309,7 @@ main {
 .contact {
     width: 122rem;
     height: 100vh;
-    padding-top: 15rem;
+    padding: 10rem 0;
     display: inline;
     justify-content: center;
 }
@@ -367,8 +400,7 @@ iframe {
 }
 iframe {
     border-radius: 3rem 0 0 3rem;
-    height: 100%; /* Garante que ele preencha 100% da altura disponível */
-    min-height: 0; /* Evita que o iframe extrapole a altura */
+    height: 100%;
     width: 60rem;
 }
 /* FOOTER */

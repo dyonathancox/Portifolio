@@ -35,7 +35,11 @@
                     <div class="text">
                         <h1>Olá,<br> Eu sou o Dyonathan</h1>
                         <h2 id="animated-text"></h2>
-                        <button role="button">Entre em contato</button>
+                        <div class="btn">
+                            <button role="button"><a href="#contact">Entre em contato</a></button>
+                            <button><a href="https://github.com/dyonathancox" target="_blank">GitHub</a></button>
+
+                        </div>
                     </div>
                     <img src="assets/coding.svg" alt="imagem dev">
                 </div>
@@ -57,7 +61,7 @@
             </section>
 
 
-            <section class="tec-container" id="tecnologias"></section>
+            <section class="tec-container" id="tecnologias">
                 <div class="tecnologia">
                     <div class="text-line">
                         <h2>Técnologias</h2> 
@@ -118,13 +122,26 @@
 
             <section class="projects-container" id="projects">
                 <div class="projects-content">
+                    <div class="text-line">
+                        <h2>Projetos</h2> 
+                        <h3>Confira meus projetos!</h3>
+                        <hr></hr>                       
+                    </div>
                     <div class="projects">
-                        <div class="text-line">
-                            <h2>Projetos</h2> 
-                            <h3>Confira meus projetos!</h3>
-                            <hr></hr>                       
+
+                        <div class="card">
+                            <span>
+                                <a href="#" onclick="openWindow(); return false;"><img src="assets/OIG1.jpeg" alt=""></a>
+                            </span>
                         </div>
 
+                        <div class="card">
+                            <span>
+                                <a href="#" onclick="openWindow(); return false;"><img src="assets/OIG1.jpeg" alt=""></a>
+                            </span>
+                        </div>
+
+                        
                     </div>
                 </div>
             </section>
@@ -169,6 +186,17 @@
 
         <script src="assets/animated.js"></script>
         <script src="https://kit.fontawesome.com/03dbe28353.js" crossorigin="anonymous"></script>
+
+        <script>
+            function openWindow() {
+                var width = 500;
+                var height = 500;
+                var left = (window.screen.width / 2) - (width / 2);
+                var top = (window.screen.height / 2) - (height / 2);
+                var options = 'top=' + top + ',left=' + left + ',width=' + width + ',height=' + height + ',scrollbars=0';
+                window.open('https://dyonathancox.github.io/Insurance/', 'janela', options);
+}
+        </script>
 
 
     </div>
