@@ -278,7 +278,8 @@ main {
 }
 
 .projects{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 25rem);
     gap: 4rem;
     padding-top: 5rem;
 }
@@ -286,11 +287,11 @@ main {
 .projects .card{
     border-radius: 2rem;
     border: 1px solid var(--txt-one);
-    width: 30rem;
+    width: 25rem;
     height: 30rem;   
     box-sizing: border-box;
-    overflow: hidden;
     padding: 0;
+    overflow: hidden;
 }
 
 .projects .card img{
@@ -441,4 +442,48 @@ footer {
     to {
         width: 62%; /*tamanho do texto*/
     }
+}
+
+
+
+
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.modal-content {
+    border-radius: 2rem;
+    margin: 6.5rem auto;
+    background-color: white;
+    width: 131rem;
+    height: 60rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal iframe{
+    width: 100%;
+    border-radius: 2rem;
+    
 }
