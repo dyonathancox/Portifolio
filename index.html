@@ -11,6 +11,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+
+    <script type="module" src="js/index.js" defer></script>
+
     <title>Portifólio</title>
 </head>
 <body>
@@ -44,8 +47,6 @@
                             <a href="#contact">
                                 <i class="fa-solid fa-envelope"></i>
                             </a>
-                           
-
                         </div>
                     </div>
                     <img src="assets/coding.svg" alt="imagem dev">
@@ -73,8 +74,8 @@
                 <div class="tecnologia full-height">
                     <div class="text-line">
                         <h2>Linguagens</h2> 
-                        <hr></hr>                       
                         <h3>Descubra as ferramentas e linguagens que utilizo!</h3>
+                        <hr></hr>                       
                     </div>
                     <div class="cards">
 
@@ -134,6 +135,7 @@
                             <span id="card-1">
                                 <a href="#" onclick="openModal('modal1'); return false;">
                                     <img src="assets/pjt1.png" alt="">
+                                    <h2>Projeto Rei dos Piratas</h2>
                                 </a>
                             </span>
                         </div>
@@ -160,8 +162,7 @@
                                 <span class="close" onclick="closeModal('modal2');">&times;</span>
                                 <iframe src="https://dyonathancox.github.io/project-nutri/" width="1222" frameborder="0"></iframe>
                             </div>
-                        </div>
-                        
+                        </div>                        
                     </div>
                 </div>
             </section>
@@ -201,21 +202,7 @@
         <footer>
             <div class="direitos">Dyonathan Cox © All Rights Reserved - 2024</div>
         </footer>
-
-        <script src="assets/animated.js"></script>
         <script src="https://kit.fontawesome.com/03dbe28353.js" crossorigin="anonymous"></script>
-
-        <script>
-
-function openModal(modalId) {
-        document.getElementById(modalId).style.display = "block";
-    }
-
-    function closeModal(modalId) {
-        document.getElementById(modalId).style.display = "none";
-    }
-
-        </script>
     </div>
 
 </body>
