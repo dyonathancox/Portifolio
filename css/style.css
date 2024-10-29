@@ -325,7 +325,7 @@ hr{
     margin: 7rem auto;
     background-color: white;
     width: 131rem;
-    height: 83rem;
+    height: 65rem;
     position: relative;
     overflow: hidden;
 }
@@ -405,6 +405,7 @@ hr{
 .details i {
     font-size: 2.4rem;
     display: flex;
+    margin: 0;
     justify-content: center;   
 }
 .location h2 {
@@ -419,8 +420,7 @@ hr{
 
 
 .details .icon:nth-of-type(1),
-.details .icon:nth-of-type(2),
-.details .icon:nth-of-type(3) {
+.details .icon:nth-of-type(2){
     grid-column: 1;
     
 }
