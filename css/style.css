@@ -30,6 +30,8 @@ header {
     justify-content: center;
     background: var(--bg-header);
     z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
 }
 
 .menu-wrapper {
@@ -124,7 +126,6 @@ hr{
     font-size: 2rem;
     white-space: nowrap;
     overflow: hidden;
-/*    animation: typing 3.5s steps(40, end), blink 0.75s infinite;*/
 }
 
 .text .btn a{
@@ -281,6 +282,7 @@ hr{
 
 .projects .card img {
     width: 100%;
+    min-height: 30rem;
     border-radius: 2rem;
 }
 
@@ -323,11 +325,16 @@ hr{
 .modal-content {
     border-radius: 2rem;
     margin: 7rem auto;
-    background-color: white;
     width: 131rem;
     height: 65rem;
     position: relative;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.img-modal img{
+    width: 100%;
 }
 
 .close {
@@ -342,9 +349,7 @@ hr{
 .modal iframe{
     width: 100%;
     border-radius: 2rem;
-    
 }
-
 
 /* CONTATO */
 .contact-container {
@@ -454,16 +459,3 @@ footer {
     padding: 2.5rem 0;
     line-height: 2em;
 }
-
-
-
-/* Animação do texto
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 2%;
-    }
-}
-*/
